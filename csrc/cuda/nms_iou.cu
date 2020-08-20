@@ -37,6 +37,7 @@
 #include <thrust/sequence.h>
 #include <cub/device/device_radix_sort.cuh>
 #include <cub/iterator/counting_input_iterator.cuh>
+#include <cub/device/device_select.cuh>
 
 constexpr int   kTPB     = 64;  // threads per block
 constexpr int   kCorners = 4;

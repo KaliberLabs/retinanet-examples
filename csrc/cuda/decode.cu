@@ -34,6 +34,7 @@
 #include <thrust/count.h>
 #include <thrust/find.h>
 #include <cub/device/device_radix_sort.cuh>
+#include <cub/device/device_select.cuh>
 #include <cub/iterator/counting_input_iterator.cuh>
 
 #include <stdio.h>

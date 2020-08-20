@@ -9,6 +9,7 @@ setup(
     packages=['retinanet', 'retinanet.backbones'],
     ext_modules=[CUDAExtension('retinanet._C',
         ['csrc/extensions.cpp', 'csrc/engine.cpp', 'csrc/cuda/decode.cu', 'csrc/cuda/decode_rotate.cu', 'csrc/cuda/nms.cu', 'csrc/cuda/nms_iou.cu'],
+        include_dirs=['/usr/local/include/opencv4/', '/root/dev/cub-1.8.0'],
         extra_compile_args={
             'cxx': ['-std=c++14', '-O2', '-Wall'],
             'nvcc': [

@@ -36,6 +36,7 @@
 #include <thrust/execution_policy.h>
 #include <thrust/gather.h>
 #include <cub/device/device_radix_sort.cuh>
+#include <cub/device/device_select.cuh>
 #include <cub/iterator/counting_input_iterator.cuh>
 
 namespace retinanet {
